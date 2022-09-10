@@ -1,0 +1,17 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * return: 0 on success
+ */
+
+int main(void)
+{
+int char;
+for (char = 'a'; char <= 'z'; ch++)
+{
+putchar(ch);
+}
+putchar ('\n');
+return (0);
+}
