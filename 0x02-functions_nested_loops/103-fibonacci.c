@@ -1,25 +1,23 @@
 #include <stdio.h>
-
 /**
- * main - prints the sum of all even Fibonacci numbers below 4,000,000
- *
- * Return: Always 0.
+ * main - main block
+ * Description: computes and prints even  number < 4,000,000
+ * 5 below 1024 (excluded), followed by a new line
+ * Return: 0
  */
 
 int main(void)
 {
-long int total_sum, sum, first, second;
-total_sum = 0;
-sum = 0;
-first = 0;
-second = 1;
-while (sum < 4000000)
+int a = 0, b = 1, next = 0;
+int sum = 0;
+while (next < 4000000)
 {
-sum = first + second;
-if (sum % 2 == 0)
-{
-total_sum += sum;
+next = a + b;
+a = b;
+b = next;
+if (next % 2 == 0)
+sum += next;
 }
-first = second;
-second = sum;
+printf("%i\n", sum);
+return (0);
 }
